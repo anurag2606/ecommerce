@@ -31,6 +31,28 @@ public class PurchaseItemController {
 
 	private void done() {
 		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
+		purchaseItemService.hashCode();
 		purchaseItemService.hashCode();
 	}
 }
