@@ -20,10 +20,14 @@ public class PurchaseItemController {
 	
 	@GetMapping("/{checkoutId}")
 	public ResponseEntity<PurchaseItemDto> getItemById(@PathVariable Integer checkoutId){
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.hashCode();
+		done();
 		System.out.print(purchaseItemService);
 		return new ResponseEntity<>(purchaseItemService.getPurchaseItem(checkoutId), HttpStatus.OK);
+	}
+
+	private void done() {
+		purchaseItemService.getPurchaseItem(0);
+		purchaseItemService.hashCode();
 	}
 }
 
