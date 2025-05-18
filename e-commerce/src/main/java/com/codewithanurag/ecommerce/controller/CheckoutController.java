@@ -17,10 +17,14 @@ import com.codewithanurag.ecommerce.services.CheckoutService;
 @RequestMapping("/api/checkout")
 public class CheckoutController {
 	
-	@Autowired
-	private CheckoutService checkoutService;
+	private final CheckoutService checkoutService;
 
-	@PostMapping("/add/item/{itemId}")
+	@Autowired
+    public CheckoutController(CheckoutService checkoutService) {
+        this.checkoutService = checkoutService;
+    }
+
+    @PostMapping("/add/item/{itemId}")
 	public ResponseEntity<CheckoutDto> createCheckout(@RequestBody CheckoutDto checkoutDto, @PathVariable Integer itemId)throws Exception {
 		return new ResponseEntity<>(checkoutService.createCheckoutItem(checkoutDto, itemId), HttpStatus.CREATED);
 
