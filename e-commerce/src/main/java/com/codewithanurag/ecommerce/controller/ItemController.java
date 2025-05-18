@@ -19,20 +19,18 @@ import com.codewithanurag.ecommerce.services.ItemService;
 @RestController
 @RequestMapping("/api/items")
 public class ItemController {
-	
-	@Autowired
-	private ItemService itemService;
 
-	@PostMapping("/addItem/image/{imageId}")
+	private final ItemService itemService;
+
+	@Autowired
+    public ItemController(ItemService itemService) {
+        this.itemService = itemService;
+    }
+
+    @PostMapping("/addItem/image/{imageId}")
 	public ResponseEntity<ItemDto> createItem(@RequestBody ItemDto itemDto, @PathVariable Integer imageId)throws NotFoundException{
 		return new ResponseEntity<>(itemService.createItem(itemDto, imageId), HttpStatus.CREATED);
 	}
-	
-//	@PostMapping("/uploadImages")
-//	public ResponseEntity<ItemDto> uploadImage(@RequestParam("image") MultipartFile file, @RequestBody ItemDto itemDto ) throws  IOException{
-//		ItemDto uploadImage = itemService.uploadImages(file, itemDto);
-//		return  ResponseEntity.status(HttpStatus.OK).body(uploadImage);
-//	}
 	
 	@GetMapping("/{itemId}")
 	public ResponseEntity<ItemDto> getItemById(@PathVariable Integer itemId){
