@@ -24,6 +24,7 @@ public class CheckoutController {
         this.checkoutService = checkoutService;
     }
 
+	//This is post
     @PostMapping("/add/item/{itemId}")
 	public ResponseEntity<CheckoutDto> createCheckout(@RequestBody CheckoutDto checkoutDto, @PathVariable Integer itemId)throws Exception {
 		return new ResponseEntity<>(checkoutService.createCheckoutItem(checkoutDto, itemId), HttpStatus.CREATED);
