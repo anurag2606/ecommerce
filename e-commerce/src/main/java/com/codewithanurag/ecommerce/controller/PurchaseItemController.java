@@ -32,6 +32,15 @@ public class PurchaseItemController {
 	private void done() {
 		purchaseItemService.getPurchaseItem(0);
 		purchaseItemService.hashCode();
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
+		System.out.println("This is for testing");
 	}
 }
 
