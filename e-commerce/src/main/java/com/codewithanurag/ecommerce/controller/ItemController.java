@@ -28,12 +28,6 @@ public class ItemController {
 		return new ResponseEntity<>(itemService.createItem(itemDto, imageId), HttpStatus.CREATED);
 	}
 	
-//	@PostMapping("/uploadImages")
-//	public ResponseEntity<ItemDto> uploadImage(@RequestParam("image") MultipartFile file, @RequestBody ItemDto itemDto ) throws  IOException{
-//		ItemDto uploadImage = itemService.uploadImages(file, itemDto);
-//		return  ResponseEntity.status(HttpStatus.OK).body(uploadImage);
-//	}
-	
 	@GetMapping("/{itemId}")
 	public ResponseEntity<ItemDto> getItemById(@PathVariable Integer itemId){
 		return new ResponseEntity<>(itemService.getItemById(itemId), HttpStatus.OK);
