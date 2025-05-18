@@ -17,21 +17,20 @@ import com.codewithanurag.ecommerce.services.ImageService;
 @RestController
 @RequestMapping("/api/images")
 public class ImageController {
-	
-	@Autowired
-	private ImageService imageService;
-	
-	@PostMapping("/uploadImages")
-	public ResponseEntity<?> uploadImage(@RequestParam("image") MultipartFile file) throws  IOException{
-		String uploadImage = imageService.uploadImages(file);
-		return  ResponseEntity.status(HttpStatus.OK).body(uploadImage);
-		
-	}
-	
-//	@GetMapping("/{imageId}")
-//	public ResponseEntity<Images> getItemById(@PathVariable Integer imageId){
-//		return new ResponseEntity<>(imageService.getImageById(imageId), HttpStatus.OK);
-	
-	}
+
+    private final ImageService imageService;
+
+    @Autowired
+    public ImageController(ImageService imageService) {
+        this.imageService = imageService;
+    }
+
+    @PostMapping("/uploadImages")
+    public ResponseEntity<?> uploadImage(@RequestParam("image") MultipartFile file) throws IOException {
+        String uploadImage = imageService.uploadImages(file);
+        return ResponseEntity.status(HttpStatus.OK).body(uploadImage);
+
+    }
+}
 
 
