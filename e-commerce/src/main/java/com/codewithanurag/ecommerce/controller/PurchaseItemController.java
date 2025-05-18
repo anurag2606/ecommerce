@@ -17,8 +17,12 @@ public class PurchaseItemController {
 	
 	@Autowired
 	private PurchaseItemService purchaseItemService;
-	
-	@GetMapping("/{checkoutId}")
+
+    public PurchaseItemController(PurchaseItemService purchaseItemService) {
+        this.purchaseItemService = purchaseItemService;
+    }
+
+    @GetMapping("/{checkoutId}")
 	public ResponseEntity<PurchaseItemDto> getItemById(@PathVariable Integer checkoutId){
 		return new ResponseEntity<>(purchaseItemService.getPurchaseItem(checkoutId), HttpStatus.OK);
 	}
