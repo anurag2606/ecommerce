@@ -64,9 +64,7 @@ public class PurchaseItemController {
 		System.out.println("This is for testing");
 		System.out.println("This is for Updated");
 		System.out.println("This is for test purpose");
-		System.out.println("Tushar is fasdfasdftesting this branch adfsgf hggh");
-		System.out.println("This issdfsdfsdff  for Dev asdf sfgfg");
+		System.out.println("Testing this branch");
+		System.out.println("This is for Dev");
 	}
 }
-
-
