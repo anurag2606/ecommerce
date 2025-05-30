@@ -24,47 +24,6 @@ public class PurchaseItemController {
 
     @GetMapping("/{checkoutId}")
 	public ResponseEntity<PurchaseItemDto> getItemById(@PathVariable Integer checkoutId){
-		done();
-		System.out.print(purchaseItemService);
 		return new ResponseEntity<>(purchaseItemService.getPurchaseItem(checkoutId), HttpStatus.OK);
-	}
-
-	private void done() {
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.getPurchaseItem(0);
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		purchaseItemService.hashCode();
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for Updated");
-		System.out.println("This is for test purpose");
-		System.out.println("Testing this branch");
-		System.out.println("This is for Dev");
 	}
 }
