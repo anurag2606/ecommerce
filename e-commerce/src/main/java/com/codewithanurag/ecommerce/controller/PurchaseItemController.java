@@ -54,19 +54,5 @@ public class PurchaseItemController {
 		purchaseItemService.hashCode();
 		purchaseItemService.hashCode();
 		purchaseItemService.hashCode();
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for testing");
-		System.out.println("This is for Updated");
-		System.out.println("This is for test purpose");
-		System.out.println("Testing this branch");
-		System.out.println("This is for Dev");
-		System.out.println("This is for Dev");
-		System.out.println("This is for Dev");
 	}
 }
